@@ -1,0 +1,42 @@
+
+"#contactsButton":{
+	right:'10dp',
+	top:'10dp'
+},
+
+"#clearAllButton":{
+	left:'10dp',
+	top:'10dp'
+
+},
+
+'TextField':{
+	color:"#336699",
+	top:"10dp", 
+	left:"10dp",
+	right:"0dp", 
+	height:"40dp",
+	backgroundColor:"#DCDCDC",
+	clearButtonMode:"Titanium.UI.INPUT_BUTTONMODE_ONFOCUS",
+	paddingLeft:"5dp",
+	paddingRight:"5dp"
+},
+
+'TableViewRow':{
+	borderColor:"#ffffff",
+	borderWidth:"0dp",
+	right:'0dp'
+},
+
+'TableView':{
+	right:'10dp',
+	height:Titanium.UI.SIZE,
+}
+
+ '#buttonVw' : {
+ 	height:Titanium.UI.SIZE
+ }
+ 
+ '#contactInfoTableView': {
+ 	top:'0dp'
+ }

@@ -1,0 +1,11 @@
+"#master[platform=android]": {
+    exitOnClose: true
+}
+"#master": {
+	layout:"vertical"
+	
+}
+
+"Label": {
+	top:10
+}

@@ -1,0 +1,53 @@
+"Window": {
+	backgroundColor: '#fff',
+	layout:"vertical"
+}
+
+"Window[platform=android]": {
+    navBarHidden: true
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000",
+	font: {
+		fontSize: '18dp'
+	}
+} 
+//header is a common class that is used for the topmost ui element to control for ios  status bar on top
+".header":{
+	top: Alloy.Globals.top
+}
+
+'#actIndicator[platform=android]':{
+  font: {fontFamily:'Helvetica Neue', fontSize:26, fontWeight:'bold'},
+  message: 'Loading...',
+  style:Ti.UI.ActivityIndicatorStyle.BIG_DARK,
+  top:10,
+  //left:10,
+  height:Ti.UI.SIZE,
+  width:Ti.UI.SIZE
+}
+
+'#actIndicator[platform=ios]':{
+  font: {fontFamily:'Helvetica Neue', fontSize:26, fontWeight:'bold'},
+  message: 'Loading...',
+  style:Ti.UI.iPhone.ActivityIndicatorStyle.DARK,
+  top:10,
+  //left:10,
+  height:Ti.UI.SIZE,
+  width:Ti.UI.SIZE
+}
+
+".instructLbl" : {
+	left:'10dp',
+	font:{fontSize:12},
+	color:'white',
+	bottom:'5dp'
+}
+
+'#header':{
+	backgroundColor:'black',
+	height:Titanium.UI.SIZE
+}

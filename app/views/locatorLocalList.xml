@@ -1,0 +1,10 @@
+<Alloy>
+	<Window title="My Locations">
+		<TableView id="TV_LocationMRU" dataCollection="LocationMRU" hideSearchOnSelection="true">
+			<SearchBar  platform="ios"     id="locField" value="1617 b"     onReturn="closeKeyboard" hintText="Enter Location" />
+			  <TableViewRow class="addressTitle" title="{DESCRIPTION}">
+			    	<!--<Label text="{DESCRIPTION}"/>-->
+			  </TableViewRow>
+		</TableView>		
+	</Window>
+</Alloy>

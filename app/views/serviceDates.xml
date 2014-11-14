@@ -1,0 +1,62 @@
+<Alloy>
+	<Window title="Service Schedule" backButtonTitle="">
+		<!--<ScrollView id="SV_servicedates">		</ScrollView>-->
+			<View id="header" layout="vertical">	
+				<Label class="instructLbl" id="lbl_serviceLocation" text="Location: "/>
+
+		</View>
+		<View top="0dp" layout="vertical">
+			<TableView  id="TV_serviceDates">
+			</TableView>
+			<ActivityIndicator id="actIndicator"></ActivityIndicator>			
+			</View>
+	</Window>
+</Alloy>
+
+			<!--<View id="header" layout="vertical">	
+				<Label class="instructLbl" id="locationLbl"/>
+				<Label class="instructLbl" text="Step 2 - Select Request"/>
+			
+			<TableView  id="tvFavorites">
+			</TableView>
+			<ActivityIndicator id="actIndicator"></ActivityIndicator>
+		</View>-->
+
+
+<!--
+ * 
+ {"APD":"_mAPD",
+ "Status":"SUCCESS",
+ "methodname":"",
+ "Services":
+ [
+ 	{
+	 	"Description":"Thursday, June 05, 2014\\nThursday, June 12, 2014\\nThursday, June 19, 2014",
+	 	"ServiceDates":
+	 		[
+	 			{"desc":null,"endDate":null,"startDate":"Thursday, June 05, 2014"},
+	 			{"desc":null,"endDate":null,"startDate":"Thursday, June 12, 2014"},
+	 			{"desc":null,"endDate":null,"startDate":"Thursday, June 19, 2014"}
+	 		],
+	 		"ServiceType":"TRASH COLLECTION",
+	 		"Status":"SUCCESS","additionalData":null
+ 	},
+ 	{
+ 		"Description":"Thursday, June 12, 2014 \\nRumpke collects recycling every two weeks in Cincinnati.\\nRecycling is collected during GOLD weeks here.",
+ 		"ServiceDates":[{"desc":"GOLD","endDate":null,"startDate":"Thursday, June 12, 2014"}],
+ 		"ServiceType":"RECYCLING COLLECTION",
+ 		"Status":"SUCCESS",
+ 		"additionalData":null
+ 	},
+ 	{
+ 		"Description":"MOUNT AUBURN \\n Week of March 19 \\n Week of August 20",
+ 		"ServiceDates":[{"desc":null,"endDate":"3/23/2012","startDate":"March 19"},
+ 						{"desc":null,"endDate":"8/24/2012","startDate":"August 20"}],
+ 		"ServiceType":"STREET SWEEPING",
+ 		"Status":"SUCCESS",
+ 		"additionalData":null
+ 	}
+ ]
+ }
+
+-->

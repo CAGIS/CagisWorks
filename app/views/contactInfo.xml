@@ -1,0 +1,24 @@
+<Alloy>
+	<Window id="contactInfo" title="Contact Info" backButtonTitle="Done">
+		<View layout='vertical'>
+			<View layout="composite" id='buttonVw'>
+				<Button id="clearAllButton" onClick="clearAll">Clear All</Button>
+				<Button id="contactsButton" onClick="displayContacts">Contacts</Button>
+			</View>
+			<TableView class="header" id="contactInfoTableView">
+				<TableViewRow>
+					<TextField id="txtFirstName" hintText="First Name" />
+				</TableViewRow>
+				<TableViewRow  borderWidth="0dp">
+					<TextField id="txtLastName" hintText="Last Name" />
+				</TableViewRow>
+				<TableViewRow>
+					<TextField id="txtPhone" hintText="Telephone Number" />
+				</TableViewRow>
+				<TableViewRow>
+					<TextField id="txtEmail" hintText="Email Address" />
+				</TableViewRow>
+			</TableView>
+		</View>
+	</Window>
+</Alloy>

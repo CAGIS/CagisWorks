@@ -1,0 +1,25 @@
+"#tvQA" : {
+	height:Titanium.UI.SIZE,
+	scrollable:'true',
+	scrollsToTop:'true',
+	top:'0dp'
+}
+
+"Window"  :{
+	layout:'vertical'
+}
+
+"#SRDesc": {
+	top:'10dp',
+	left:'20dp',
+	right:'20dp',
+	bottom:'10dp',
+	font:{fontSize:'10dp'},
+	color:'white'	
+}
+
+"#purpose": {
+	height:Titanium.UI.SIZE,
+	backgroundColor:'black'
+}
+

@@ -1,0 +1,11 @@
+<Alloy>
+	<Window>	
+		<!-- tableview representing all master rows -->
+		<TableView class="header" id="locListTableView" onClick="onLocationSelected">
+			<HeaderView platform="android">
+				<Label id="lbl_headerview">Select Location</Label>
+			</HeaderView>
+		</TableView>
+		
+	</Window>		
+</Alloy>

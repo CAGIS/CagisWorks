@@ -1,0 +1,37 @@
+"#cagisMap": {
+	backgroundColor: '#000',
+	layout:"vertical"
+}
+"#cagMapWebView": {
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	borderRadius:"1"	
+}
+
+
+"#header": {
+	layout:"horizontal",
+	height: "43dp",
+	width: Ti.UI.FILL
+}
+
+"#locField":{
+	height:"43dp" ,
+	//barColor:"#999",
+	showCancel:"true" ,
+	width:'100%'
+}
+
+"MenuItem": {
+    showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
+},
+"#item1": {
+    icon: Ti.Android.R.drawable.ic_menu_preferences
+},
+"#item2": {
+    icon: Ti.Android.R.drawable.ic_menu_search
+},
+"#menu": {
+    icon: "/ic_menu_add.png",
+    displayHomeAsUp: true,
+}

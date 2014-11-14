@@ -1,0 +1,12 @@
+<Alloy>
+	<Window id="serviceWindow" title="Request a Service" backButtonTitle="Home">
+		<View id="header" layout="vertical">
+			<Label class="instructLbl" id="locationLbl"/>
+			<Label class="instructLbl" text="Step 2 - Select Request"/>
+		</View>
+		<View top="0dp" layout="vertical">
+			<TableView  id="tvFavorites"></TableView>
+			<ActivityIndicator id="actIndicator"></ActivityIndicator>
+		</View>
+	</Window>
+</Alloy>

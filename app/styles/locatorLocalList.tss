@@ -1,0 +1,13 @@
+
+".container" : {
+  
+},
+
+".addressTitle": {
+	   			color:'red',
+			font:{fontSize:10}	
+}
+
+'#TV_LocationMRU': {
+	height:Titanium.UI.SIZE
+}

@@ -1,0 +1,12 @@
+<Alloy>
+	<Window title="Request a Service" backButtonTitle="Back">
+	<View id="purpose" touchEnabled="false">	
+		<Label id='SRDesc' touchEnabled="false"></Label>
+	</View>	
+	<View>
+		
+			<TableView  id="tvQA">
+			</TableView>			
+</View>
+	</Window>
+</Alloy>

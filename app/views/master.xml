@@ -1,0 +1,11 @@
+<Alloy>
+	<Window title="City Hall">
+		<Label id="openReportCSRWindow" onClick="openReportCSRWindow">Request Services</Label>
+		<Label id="openServiceDatesWindow" onClick="openServiceDatesWindow">Service Dates</Label>
+		<Label id="openExploreMapWindow" onClick="openExploreMapWindow">Map</Label>
+		<Label id="openContactInfoWindow" onClick="openContactInfoWindow">My Info</Label>
+		<Label id="openLocatorLocalListWindow" onClick="openLocatorLocalListWindow">Local Stored Locator List</Label>
+		<Label id="openPothole" onClick="openPothole">Pothole</Label>
+
+	</Window>		
+</Alloy>

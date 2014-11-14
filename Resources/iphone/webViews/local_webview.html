@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+<html>
+     <head>
+          <style type="text/css"> .map .logo-med {background-image: none;} </style>
+		  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+          <meta name="format-detection" content="telephone=no"/>
+
+		<link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
+		<script type="text/javascript" src="http://js.arcgis.com/3.9compact/"></script> 
+           <script type='text/javascript' src = "http://cagismaps.hamilton-co.org/csrmobile/javascript/mobileTest.js"></script>
+		  <script type='text/javascript' src = "http://cagismaps.hamilton-co.org/csrmobile/javascript/tiHandlers.js"></script>
+          <script type='text/javascript' src = "http://cagismaps.hamilton-co.org/csrmobile/javascript/CAGISlocationReport.js"></script>
+
+          <link rel="stylesheet" type="text/css" href="http://cagismaps.hamilton-co.org/csrmobile/css/mobile.css">
+		
+		<!--<script type='text/javascript' >		
+			dojo.ready(
+				function(){
+					alert('dojo is ready');
+					dojo.subscribe('maploaded',null,function(){alert('map loaded')});
+				}
+			) 
+		</script>-->
+		
+     </head>
+
+     <!--<body  id="mybody" bgcolor="#fffacd"; background="grid.png"; background-repeat=repeat;  onorientationchange="resizeHandler();">-->
+	 <body  id="mybody" onorientationchange="resizeHandler();">	
+          <div id="map" style="width:100%; height:100%;">
+              <!--<div id="loadingImg" style="position:absolute; font-size:24px; font-weight:bold; font-family:Arial Rounded MT Bold; color:red; background-color:white;  left:70px; top:240px; z-index:100;" >Loading map... </div>-->
+          </div>
+
+          <div id="divRequestOptionsContainer">
+              <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                   <tbody>
+                        <tr align="center" class="trOptions">
+                             <td><img id="btnShowAerial"onclick="showAerial()"  class="imgOptions" title="Search Address" src="http://cagismaps.hamilton-co.org/csrmobile/images/aerial.png"></td>
+                             <td><img id="btnShowStreet" onclick="showStreetMap()" class="imgOptions" title="My Location" src="http://cagismaps.hamilton-co.org/csrmobile/images/streetSelected.png"></td>
+                        </tr>
+                   </tbody>
+              </table>
+          </div>
+     </body>
+</html>

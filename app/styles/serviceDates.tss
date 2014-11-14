@@ -1,0 +1,64 @@
+//STYLE FOR ACTIVITY INDICATOR IN APP.TSS
+
+"#serviceDates": {
+}
+"#SV_servicedates":{
+	layout:"vertical",
+	scrollType:"vertical",
+	backgroundColor:"red"
+}
+
+
+/*"#header":{
+	width: Ti.UI.FILL,
+	height:Titanium.UI.SIZE,
+	backgroundColor:"#fff"
+}*/
+"#TV_serviceDates":{
+	//minRowHeight:'80dp'
+	height:Titanium.UI.SIZE
+}
+"TableViewSection":{
+	font:{fontSize:'16dp'}
+}
+"TableViewRow":{
+	width: Ti.UI.FILL,
+	height:Titanium.UI.SIZE,	
+	top:'5dp',
+	bottom:'5dp'
+}
+".rowLabel":{
+	top:'0dp',
+	left:'10dp',
+	right:'10dp',
+	height:Titanium.UI.SIZE,
+	width: Ti.UI.FILL,
+	autoLink:'AUTOLINK_ALL',
+	font:{fontSize:'12dp'},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color:"red"	
+}
+".rowDocumentButton":{
+	height:'30dp',
+ 	width:'80%',
+ 	bottom:'10dp',
+ 	backgroundImage:'blank_bar.png',
+ 	borderRadius:'15dp',
+ 	borderWidth:'0.5dp',
+ 	font: {
+		fontSize:'12dp',
+		fontWeight:'bold'
+	}	
+}
+".rowTextArea":{
+	top:'0dp',
+	left:'10dp',
+	right:'10dp',
+	height:Titanium.UI.SIZE,
+	editable:false,
+	autoLink:Titanium.UI.AUTOLINK_ALL,
+	font:{fontSize:'12dp'}	
+}
+
+
+

@@ -1,0 +1,12 @@
+<Alloy>
+	<Window title="CAGIS Map"  backButtonTitle="" navBarHidden="false">	        	
+ 		<Menu id="menu" platform="android" title="My XML Menu">
+            <MenuItem id="item1" title="Settings"  />
+            <MenuItem id="item2" title="Search"  />
+        </Menu>
+	   	    <SearchView platform="android" id="locField" ns="Ti.UI.Android" onCancel="cancelSearch" onSubmit="closeKeyboard" hintText="Enter Location"  showBookmark="true"/>	
+	        <SearchBar  platform="ios"id="locField" onCancel="cancelSearch"  onReturn="closeKeyboard" hintText="Enter Location" showBookmark="true" />      	
+
+	  	<WebView id='cagMapWebView' url="/webViews/local_webview.html" touchEnabled="true" willHandleTouches="true" />
+	</Window>
+</Alloy>

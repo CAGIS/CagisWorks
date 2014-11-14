@@ -1,0 +1,11 @@
+"#lbl_headerview": {
+	color: "#000",
+	font: {
+		fontSize: '24dp'
+	}		
+}
+"#title" : {
+    color: 'black',
+    font: { fontFamily:'Arial', fontSize: '15dp', fontWeight:'bold' },
+    left: '60dp', top: 0
+}

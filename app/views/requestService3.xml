@@ -1,0 +1,11 @@
+<Alloy>
+	<Window title="Request a Service" backButtonTitle="">
+		
+			<View id="header">	
+				<Label id="lblchooseLocation" text="requestService3"  onClick="doSomething" />
+			</View>
+			<TableView  id="tvLocationChoice">
+			</TableView>			
+	
+	</Window>
+</Alloy>

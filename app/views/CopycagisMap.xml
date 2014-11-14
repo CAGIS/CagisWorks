@@ -1,0 +1,29 @@
+<Alloy>
+	<Window title="CAGIS Map" modal="true" backButtonTitle="">
+	    <!-- header -->
+ 	<View id="header">		        	
+        <!-- <Button id="button" onClick="closeKeyboard" title="favs" top="10" width="43dp" height="43dp"/>-->
+        <Toolbar platform="ios" bottom="0" borderTop="true" borderBottom="false">
+            <!-- The Items tag sets the Toolbar.items property. -->
+            <Items>
+                <Label id="send" title="Address Goes Here"/>
+                <FlexSpace/>
+                <Button id="Favorites" systemButton="Ti.UI.iPhone.SystemButton.BOOKMARKS " />
+                <FlexSpace/>
+                <Button id="Choose" systemButton="Ti.UI.iPhone.SystemButton.DONE" />
+            </Items>
+            <!-- Place additional views for the Toolbar here. -->
+
+        </Toolbar>	            
+	</View>
+	<!--
+ 		<Menu id="menu" platform="android" title="My XML Menu">
+            <MenuItem id="item1" title="Settings" onClick="alert('openSettings')" />
+            <MenuItem id="item2" title="Search" onClick="alert('doSearch')" />
+        </Menu>
+     -->
+	        <SearchBar  platform="ios"     id="locField" value="1617 b"     onReturn="closeKeyboard" hintText="Enter Location" />
+	        <SearchView platform="android" id="locField" ns="Ti.UI.Android" onSubmit="closeKeyboard" hintText="Enter Location" />	
+	  	<WebView id='cagMapWebView' url="/webViews/local_webview.html" willHandleTouches="false"/>
+	</Window>
+</Alloy>
