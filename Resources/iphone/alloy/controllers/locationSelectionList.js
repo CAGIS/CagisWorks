@@ -35,6 +35,9 @@ function Controller() {
     $.__views.locationSelectionList = Ti.UI.createWindow({
         backgroundColor: "#fff",
         layout: "vertical",
+        statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+        barColor: "FF00AEEF",
+        navTintColor: "#fff",
         id: "locationSelectionList"
     });
     $.__views.locationSelectionList && $.addTopLevelView($.__views.locationSelectionList);

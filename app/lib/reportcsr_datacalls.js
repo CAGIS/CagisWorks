@@ -86,6 +86,7 @@ var onServerDataCall_GetSRConfig_Success=function(_jsonReply, _xhr){
 				yn.setBorderRadius(7);
 				yn.setColor('blue');
 				yn.setTitle('No');
+				//yn.borderColor = '#808080';
 				yn.setTextAlign(Ti.UI.TEXT_ALIGNMENT_CENTER);
 				yn.setWidth('60dp');
 				yn.addEventListener('click', function(e){
@@ -99,6 +100,10 @@ var onServerDataCall_GetSRConfig_Success=function(_jsonReply, _xhr){
 					}
 				});
 			} else {
+				yn.thumbTintColor = '#808080';
+				yn.tintColor='gray';
+				yn.onTintColor = 'blue';
+				yn.opacity=1.0;
 				yn.addEventListener('change', function(e){
 					Ti.API.info(JSON.stringify(e));
 					if (e.source.value == true){
@@ -679,8 +684,8 @@ function addWinToNavGroup(win){
 var sortSRData = function(a,b){
 	var nameA = a.name.toLowerCase();
 	var nameB = b.name.toLowerCase();
-	if (nameA < nameB) {return -1};
-	if (nameA > nameB){return 1};
+	if (nameA < nameB) {return -1;}
+	if (nameA > nameB){return 1;}
 	return 0;
 };
 

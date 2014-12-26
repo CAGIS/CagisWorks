@@ -1,0 +1,16 @@
+<Alloy>
+    <Window id="win" >
+    	
+        <ScrollableView id="scrollableView" showPagingControl="true">
+            <View id="view1" backgroundColor="#FF00AEEF">
+               <Label></Label>
+            </View>
+           <!-- <View id="view2" backgroundColor="#00aeef">
+             <Label>View 2</Label>
+             </View>
+            <View id="view3" backgroundColor="#00aeef">
+             <Label>View 3</Label>
+            </View>-->
+        </ScrollableView>
+    </Window>
+ </Alloy>

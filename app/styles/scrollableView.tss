@@ -1,0 +1,15 @@
+
+".container" : {
+  
+}
+
+"#scrollableView":{
+	backgroundColor:"#FF00AEEF"
+}
+
+"Label": {
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    color: "#fff", 
+    transform: Alloy.Globals.rotateLeft // value is defined in the alloy.js file      
+},

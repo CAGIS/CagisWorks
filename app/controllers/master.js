@@ -14,9 +14,17 @@ function openReportCSRWindow(){
 };
 function openPothole(){
 	Alloy.Globals.srType = 'PTHOLE';
-				var win=Alloy.createController("requestDataEntry").getView();
-			Alloy.Globals.requestDataEntry = win;
-			addWinToNavGroup(win);
+	var win=Alloy.createController("requestDataEntry").getView();
+	Alloy.Globals.requestDataEntry = win;
+	addWinToNavGroup(win);
+}
+
+function openPothole2(){
+	Alloy.Globals.srType = 'PTHOLE';
+	var win=Alloy.createController("scrollableView").getView();
+	//win.setToolbar([],{barColor:'#00aeef', translucent:false});
+	Alloy.Globals.requestDataEntry = win;
+	addWinToNavGroup(win);
 }
 
 function openServiceDatesWindow(){

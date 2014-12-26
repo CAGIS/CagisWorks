@@ -27,6 +27,9 @@ function Controller() {
     $.__views.contactInfo = Ti.UI.createWindow({
         backgroundColor: "#fff",
         layout: "vertical",
+        statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+        barColor: "FF00AEEF",
+        navTintColor: "#fff",
         id: "contactInfo",
         title: "Contact Info",
         backButtonTitle: "Done"

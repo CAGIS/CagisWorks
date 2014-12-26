@@ -1,11 +1,34 @@
 <Alloy>
-	<Window title="City Hall">
-		<Label id="openReportCSRWindow" onClick="openReportCSRWindow">Request Services</Label>
+	<Window title="City Hall" backgroundColor="#EBEDC8">
+		<!--<Label id="openReportCSRWindow" onClick="openReportCSRWindow">Request Services</Label>
 		<Label id="openServiceDatesWindow" onClick="openServiceDatesWindow">Service Dates</Label>
 		<Label id="openExploreMapWindow" onClick="openExploreMapWindow">Map</Label>
 		<Label id="openContactInfoWindow" onClick="openContactInfoWindow">My Info</Label>
 		<Label id="openLocatorLocalListWindow" onClick="openLocatorLocalListWindow">Local Stored Locator List</Label>
 		<Label id="openPothole" onClick="openPothole">Pothole</Label>
-
+		<Label id="openPothole2" onClick="openPothole2">Pothole2</Label>
+		<Label id="andPhone" platform="android"></Label>
+		<TextArea id="iosPhone" platform="ios"></TextArea>-->
+	
+		<View id='homeGrid' backgroundColor="transparent" width="90%" top="15%" layout="vertical">
+			<View top="0dip" height="80dip"   >
+				<View width="65%" backgroundColor="#00AEEF" height="80dp" left="0dip" onClick="openReportCSRWindow" layout="absolute" >
+					<Label id="openReportCSRWindow" top="50dip" color="white">Request Services</Label>
+				</View>
+			<View width="34%" backgroundColor="#D5E04D" height="80dp" right="0dip" onClick="openServiceDatesWindow"></View>
+			</View>
+			<View top="3dp" height="80dip" >
+				<View width="34%" backgroundColor="#1A6196" height="80dp" left="0dip" ></View>
+				<View width="65%" backgroundColor="#00457C" height="80dp" right="0dip" ></View>
+			</View>
+			<View top="3dp" height="80dip" >
+				<View width="44%" backgroundColor="#00AEEF" height="80dp" left="0dp">Label></View>
+				<View width="55%" backgroundColor="#D5E04D" height="80dp"right="0dp" ></View>
+			</View>
+		</View>
+	
+	
+	
+	
 	</Window>		
 </Alloy>

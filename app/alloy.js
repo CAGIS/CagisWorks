@@ -69,4 +69,4 @@ Alloy.Globals.locObj={
 Alloy.Collections.instance('LocationMRU');  //accessed thru Alloy.Collections.LocationMRU
 Alloy.Collections.instance('contactInformation');
 
-
+//Ti.UI.backgroundColor = "#00aeef";

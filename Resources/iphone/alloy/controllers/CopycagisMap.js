@@ -27,6 +27,9 @@ function Controller() {
     $.__views.CopycagisMap = Ti.UI.createWindow({
         backgroundColor: "#fff",
         layout: "vertical",
+        statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+        barColor: "FF00AEEF",
+        navTintColor: "#fff",
         title: "CAGIS Map",
         modal: "true",
         backButtonTitle: "",

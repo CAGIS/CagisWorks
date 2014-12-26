@@ -26,6 +26,9 @@ function Controller() {
     $.__views.serviceDates = Ti.UI.createWindow({
         backgroundColor: "#fff",
         layout: "vertical",
+        statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+        barColor: "FF00AEEF",
+        navTintColor: "#fff",
         title: "Service Schedule",
         backButtonTitle: "",
         id: "serviceDates"
@@ -51,17 +54,17 @@ function Controller() {
         text: "Location: "
     });
     $.__views.header.add($.__views.lbl_serviceLocation);
-    $.__views.__alloyId26 = Ti.UI.createView({
+    $.__views.__alloyId37 = Ti.UI.createView({
         top: "0dp",
         layout: "vertical",
-        id: "__alloyId26"
+        id: "__alloyId37"
     });
-    $.__views.serviceDates.add($.__views.__alloyId26);
+    $.__views.serviceDates.add($.__views.__alloyId37);
     $.__views.TV_serviceDates = Ti.UI.createTableView({
         height: Titanium.UI.SIZE,
         id: "TV_serviceDates"
     });
-    $.__views.__alloyId26.add($.__views.TV_serviceDates);
+    $.__views.__alloyId37.add($.__views.TV_serviceDates);
     $.__views.actIndicator = Ti.UI.createActivityIndicator({
         font: {
             fontFamily: "Helvetica Neue",
@@ -75,7 +78,7 @@ function Controller() {
         width: Ti.UI.SIZE,
         id: "actIndicator"
     });
-    $.__views.__alloyId26.add($.__views.actIndicator);
+    $.__views.__alloyId37.add($.__views.actIndicator);
     exports.destroy = function() {};
     _.extend($, $.__views);
     arguments[0] || {};

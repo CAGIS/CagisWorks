@@ -13,27 +13,8 @@ function Controller() {
         Alloy.Globals.requestFavorites = win;
         addWinToNavGroup(win);
     }
-    function openPothole() {
-        Alloy.Globals.srType = "PTHOLE";
-        var win = Alloy.createController("requestDataEntry").getView();
-        Alloy.Globals.requestDataEntry = win;
-        addWinToNavGroup(win);
-    }
     function openServiceDatesWindow() {
         var win = Alloy.createController("serviceDates").getView();
-        addWinToNavGroup(win);
-    }
-    function openExploreMapWindow() {
-        var win = Alloy.createController("cagisMap").getView();
-        addWinToNavGroup(win);
-    }
-    function openLocatorLocalListWindow() {
-        var win = Alloy.createController("locatorLocalList").getView();
-        addWinToNavGroup(win);
-    }
-    function openContactInfoWindow() {
-        var win = Alloy.createController("contactInfo").getView();
-        Alloy.Globals.contactInfo = win;
         addWinToNavGroup(win);
     }
     function addWinToNavGroup(win) {
@@ -56,90 +37,104 @@ function Controller() {
     var exports = {};
     var __defers = {};
     $.__views.master = Ti.UI.createWindow({
-        backgroundColor: "#fff",
+        backgroundColor: "#EBEDC8",
         layout: "vertical",
+        statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+        barColor: "FF00AEEF",
+        navTintColor: "#fff",
         title: "City Hall",
         id: "master"
     });
     $.__views.master && $.addTopLevelView($.__views.master);
+    $.__views.homeGrid = Ti.UI.createView({
+        id: "homeGrid",
+        backgroundColor: "transparent",
+        width: "90%",
+        top: "15%",
+        layout: "vertical"
+    });
+    $.__views.master.add($.__views.homeGrid);
+    $.__views.__alloyId19 = Ti.UI.createView({
+        top: "0dip",
+        height: "80dip",
+        id: "__alloyId19"
+    });
+    $.__views.homeGrid.add($.__views.__alloyId19);
+    $.__views.__alloyId20 = Ti.UI.createView({
+        width: "65%",
+        backgroundColor: "#00AEEF",
+        height: "80dp",
+        left: "0dip",
+        layout: "absolute",
+        id: "__alloyId20"
+    });
+    $.__views.__alloyId19.add($.__views.__alloyId20);
+    openReportCSRWindow ? $.__views.__alloyId20.addEventListener("click", openReportCSRWindow) : __defers["$.__views.__alloyId20!click!openReportCSRWindow"] = true;
     $.__views.openReportCSRWindow = Ti.UI.createLabel({
         width: Ti.UI.SIZE,
         height: Ti.UI.SIZE,
-        color: "#000",
+        color: "white",
         font: {
             fontSize: "18dp"
         },
-        top: 10,
+        top: "50dip",
         text: "Request Services",
         id: "openReportCSRWindow"
     });
-    $.__views.master.add($.__views.openReportCSRWindow);
-    openReportCSRWindow ? $.__views.openReportCSRWindow.addEventListener("click", openReportCSRWindow) : __defers["$.__views.openReportCSRWindow!click!openReportCSRWindow"] = true;
-    $.__views.openServiceDatesWindow = Ti.UI.createLabel({
-        width: Ti.UI.SIZE,
-        height: Ti.UI.SIZE,
-        color: "#000",
-        font: {
-            fontSize: "18dp"
-        },
-        top: 10,
-        text: "Service Dates",
-        id: "openServiceDatesWindow"
+    $.__views.__alloyId20.add($.__views.openReportCSRWindow);
+    $.__views.__alloyId21 = Ti.UI.createView({
+        width: "34%",
+        backgroundColor: "#D5E04D",
+        height: "80dp",
+        right: "0dip",
+        id: "__alloyId21"
     });
-    $.__views.master.add($.__views.openServiceDatesWindow);
-    openServiceDatesWindow ? $.__views.openServiceDatesWindow.addEventListener("click", openServiceDatesWindow) : __defers["$.__views.openServiceDatesWindow!click!openServiceDatesWindow"] = true;
-    $.__views.openExploreMapWindow = Ti.UI.createLabel({
-        width: Ti.UI.SIZE,
-        height: Ti.UI.SIZE,
-        color: "#000",
-        font: {
-            fontSize: "18dp"
-        },
-        top: 10,
-        text: "Map",
-        id: "openExploreMapWindow"
+    $.__views.__alloyId19.add($.__views.__alloyId21);
+    openServiceDatesWindow ? $.__views.__alloyId21.addEventListener("click", openServiceDatesWindow) : __defers["$.__views.__alloyId21!click!openServiceDatesWindow"] = true;
+    $.__views.__alloyId22 = Ti.UI.createView({
+        top: "3dp",
+        height: "80dip",
+        id: "__alloyId22"
     });
-    $.__views.master.add($.__views.openExploreMapWindow);
-    openExploreMapWindow ? $.__views.openExploreMapWindow.addEventListener("click", openExploreMapWindow) : __defers["$.__views.openExploreMapWindow!click!openExploreMapWindow"] = true;
-    $.__views.openContactInfoWindow = Ti.UI.createLabel({
-        width: Ti.UI.SIZE,
-        height: Ti.UI.SIZE,
-        color: "#000",
-        font: {
-            fontSize: "18dp"
-        },
-        top: 10,
-        text: "My Info",
-        id: "openContactInfoWindow"
+    $.__views.homeGrid.add($.__views.__alloyId22);
+    $.__views.__alloyId23 = Ti.UI.createView({
+        width: "34%",
+        backgroundColor: "#1A6196",
+        height: "80dp",
+        left: "0dip",
+        id: "__alloyId23"
     });
-    $.__views.master.add($.__views.openContactInfoWindow);
-    openContactInfoWindow ? $.__views.openContactInfoWindow.addEventListener("click", openContactInfoWindow) : __defers["$.__views.openContactInfoWindow!click!openContactInfoWindow"] = true;
-    $.__views.openLocatorLocalListWindow = Ti.UI.createLabel({
-        width: Ti.UI.SIZE,
-        height: Ti.UI.SIZE,
-        color: "#000",
-        font: {
-            fontSize: "18dp"
-        },
-        top: 10,
-        text: "Local Stored Locator List",
-        id: "openLocatorLocalListWindow"
+    $.__views.__alloyId22.add($.__views.__alloyId23);
+    $.__views.__alloyId24 = Ti.UI.createView({
+        width: "65%",
+        backgroundColor: "#00457C",
+        height: "80dp",
+        right: "0dip",
+        id: "__alloyId24"
     });
-    $.__views.master.add($.__views.openLocatorLocalListWindow);
-    openLocatorLocalListWindow ? $.__views.openLocatorLocalListWindow.addEventListener("click", openLocatorLocalListWindow) : __defers["$.__views.openLocatorLocalListWindow!click!openLocatorLocalListWindow"] = true;
-    $.__views.openPothole = Ti.UI.createLabel({
-        width: Ti.UI.SIZE,
-        height: Ti.UI.SIZE,
-        color: "#000",
-        font: {
-            fontSize: "18dp"
-        },
-        top: 10,
-        text: "Pothole",
-        id: "openPothole"
+    $.__views.__alloyId22.add($.__views.__alloyId24);
+    $.__views.__alloyId25 = Ti.UI.createView({
+        top: "3dp",
+        height: "80dip",
+        id: "__alloyId25"
     });
-    $.__views.master.add($.__views.openPothole);
-    openPothole ? $.__views.openPothole.addEventListener("click", openPothole) : __defers["$.__views.openPothole!click!openPothole"] = true;
+    $.__views.homeGrid.add($.__views.__alloyId25);
+    $.__views.__alloyId26 = Ti.UI.createView({
+        width: "44%",
+        backgroundColor: "#00AEEF",
+        height: "80dp",
+        left: "0dp",
+        id: "__alloyId26"
+    });
+    $.__views.__alloyId25.add($.__views.__alloyId26);
+    $.__views.__alloyId27 = Ti.UI.createView({
+        width: "55%",
+        backgroundColor: "#D5E04D",
+        height: "80dp",
+        right: "0dp",
+        id: "__alloyId27"
+    });
+    $.__views.__alloyId25.add($.__views.__alloyId27);
     exports.destroy = function() {};
     _.extend($, $.__views);
     arguments[0] || {};
@@ -147,12 +142,8 @@ function Controller() {
     $.master.addEventListener("close", function() {
         $.destroy();
     });
-    __defers["$.__views.openReportCSRWindow!click!openReportCSRWindow"] && $.__views.openReportCSRWindow.addEventListener("click", openReportCSRWindow);
-    __defers["$.__views.openServiceDatesWindow!click!openServiceDatesWindow"] && $.__views.openServiceDatesWindow.addEventListener("click", openServiceDatesWindow);
-    __defers["$.__views.openExploreMapWindow!click!openExploreMapWindow"] && $.__views.openExploreMapWindow.addEventListener("click", openExploreMapWindow);
-    __defers["$.__views.openContactInfoWindow!click!openContactInfoWindow"] && $.__views.openContactInfoWindow.addEventListener("click", openContactInfoWindow);
-    __defers["$.__views.openLocatorLocalListWindow!click!openLocatorLocalListWindow"] && $.__views.openLocatorLocalListWindow.addEventListener("click", openLocatorLocalListWindow);
-    __defers["$.__views.openPothole!click!openPothole"] && $.__views.openPothole.addEventListener("click", openPothole);
+    __defers["$.__views.__alloyId20!click!openReportCSRWindow"] && $.__views.__alloyId20.addEventListener("click", openReportCSRWindow);
+    __defers["$.__views.__alloyId21!click!openServiceDatesWindow"] && $.__views.__alloyId21.addEventListener("click", openServiceDatesWindow);
     _.extend($, exports);
 }
 

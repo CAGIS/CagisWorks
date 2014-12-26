@@ -3,6 +3,14 @@
 	layout:"vertical"
 }
 
+"Window[platform=ios]": {
+	backgroundColor: '#fff',
+	layout:"vertical",
+	statusBarStyle : Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+	barColor:"FF00AEEF",
+	navTintColor:"#fff"
+}
+
 "Window[platform=android]": {
     navBarHidden: true
 }

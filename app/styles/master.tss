@@ -9,3 +9,19 @@
 "Label": {
 	top:10
 }
+"#andPhone":{
+	color:"Blue",
+	autoLink:Titanium.UI.AUTOLINK_ALL,
+	text:"(513) 352-6917"
+}
+"#iosPhone":{
+	top:10,
+    left:10,
+    right:10,
+    top:10,
+    textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+    editable:false,
+    value:'(513) 352-6917',
+    font:{fontSize:15},
+    autoLink:Ti.UI.AUTOLINK_ALL
+}

@@ -84,10 +84,16 @@ var onServerDataCall_GetSRConfig_Success = function(_jsonReply) {
                         e.source.TheAnswer = "No";
                     }
                 });
-            } else yn.addEventListener("change", function(e) {
-                Ti.API.info(JSON.stringify(e));
-                e.source.TheAnswer = true == e.source.value ? "Yes" : "No";
-            });
+            } else {
+                yn.thumbTintColor = "#808080";
+                yn.tintColor = "gray";
+                yn.onTintColor = "blue";
+                yn.opacity = 1;
+                yn.addEventListener("change", function(e) {
+                    Ti.API.info(JSON.stringify(e));
+                    e.source.TheAnswer = true == e.source.value ? "Yes" : "No";
+                });
+            }
             myLabel.right = "70dp";
             Alloy.Globals.QAControlList.push(yn);
             tvr.add(yn);

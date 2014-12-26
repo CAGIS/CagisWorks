@@ -62,6 +62,9 @@ function Controller() {
     $.__views.locatorLocalList = Ti.UI.createWindow({
         backgroundColor: "#fff",
         layout: "vertical",
+        statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+        barColor: "FF00AEEF",
+        navTintColor: "#fff",
         title: "My Locations",
         id: "locatorLocalList"
     });

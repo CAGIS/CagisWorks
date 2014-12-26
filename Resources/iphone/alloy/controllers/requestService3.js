@@ -39,6 +39,9 @@ function Controller() {
     $.__views.requestService3 = Ti.UI.createWindow({
         backgroundColor: "#fff",
         layout: "vertical",
+        statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+        barColor: "FF00AEEF",
+        navTintColor: "#fff",
         title: "Request a Service",
         backButtonTitle: "",
         id: "requestService3"

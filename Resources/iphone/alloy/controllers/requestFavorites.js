@@ -26,6 +26,9 @@ function Controller() {
     $.__views.serviceWindow = Ti.UI.createWindow({
         backgroundColor: "#fff",
         layout: "vertical",
+        statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+        barColor: "FF00AEEF",
+        navTintColor: "#fff",
         id: "serviceWindow",
         title: "Request a Service",
         backButtonTitle: "Home"
@@ -50,7 +53,7 @@ function Controller() {
         id: "locationLbl"
     });
     $.__views.header.add($.__views.locationLbl);
-    $.__views.__alloyId20 = Ti.UI.createLabel({
+    $.__views.__alloyId29 = Ti.UI.createLabel({
         width: Ti.UI.SIZE,
         height: Ti.UI.SIZE,
         color: "white",
@@ -60,20 +63,20 @@ function Controller() {
         left: "10dp",
         bottom: "5dp",
         text: "Step 2 - Select Request",
-        id: "__alloyId20"
+        id: "__alloyId29"
     });
-    $.__views.header.add($.__views.__alloyId20);
-    $.__views.__alloyId21 = Ti.UI.createView({
+    $.__views.header.add($.__views.__alloyId29);
+    $.__views.__alloyId30 = Ti.UI.createView({
         top: "0dp",
         layout: "vertical",
-        id: "__alloyId21"
+        id: "__alloyId30"
     });
-    $.__views.serviceWindow.add($.__views.__alloyId21);
+    $.__views.serviceWindow.add($.__views.__alloyId30);
     $.__views.tvFavorites = Ti.UI.createTableView({
         height: Titanium.UI.SIZE,
         id: "tvFavorites"
     });
-    $.__views.__alloyId21.add($.__views.tvFavorites);
+    $.__views.__alloyId30.add($.__views.tvFavorites);
     $.__views.actIndicator = Ti.UI.createActivityIndicator({
         font: {
             fontFamily: "Helvetica Neue",
@@ -87,7 +90,7 @@ function Controller() {
         width: Ti.UI.SIZE,
         id: "actIndicator"
     });
-    $.__views.__alloyId21.add($.__views.actIndicator);
+    $.__views.__alloyId30.add($.__views.actIndicator);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.actIndicator.show();

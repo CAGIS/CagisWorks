@@ -26,6 +26,9 @@ function Controller() {
     $.__views.requestDataEntry = Ti.UI.createWindow({
         backgroundColor: "#fff",
         layout: "vertical",
+        statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+        barColor: "FF00AEEF",
+        navTintColor: "#fff",
         title: "Request a Service",
         backButtonTitle: "Back",
         id: "requestDataEntry"
@@ -53,10 +56,10 @@ function Controller() {
         id: "SRDesc"
     });
     $.__views.purpose.add($.__views.SRDesc);
-    $.__views.__alloyId19 = Ti.UI.createView({
-        id: "__alloyId19"
+    $.__views.__alloyId28 = Ti.UI.createView({
+        id: "__alloyId28"
     });
-    $.__views.requestDataEntry.add($.__views.__alloyId19);
+    $.__views.requestDataEntry.add($.__views.__alloyId28);
     $.__views.tvQA = Ti.UI.createTableView({
         height: Titanium.UI.SIZE,
         scrollable: "true",
@@ -64,7 +67,7 @@ function Controller() {
         top: "0dp",
         id: "tvQA"
     });
-    $.__views.__alloyId19.add($.__views.tvQA);
+    $.__views.__alloyId28.add($.__views.tvQA);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var reportCSRData = require("reportcsr_datacalls");

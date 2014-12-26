@@ -52,17 +52,17 @@ function Controller() {
         text: "Location: "
     });
     $.__views.header.add($.__views.lbl_serviceLocation);
-    $.__views.__alloyId22 = Ti.UI.createView({
+    $.__views.__alloyId24 = Ti.UI.createView({
         top: "0dp",
         layout: "vertical",
-        id: "__alloyId22"
+        id: "__alloyId24"
     });
-    $.__views.serviceDates.add($.__views.__alloyId22);
+    $.__views.serviceDates.add($.__views.__alloyId24);
     $.__views.TV_serviceDates = Ti.UI.createTableView({
         height: Titanium.UI.SIZE,
         id: "TV_serviceDates"
     });
-    $.__views.__alloyId22.add($.__views.TV_serviceDates);
+    $.__views.__alloyId24.add($.__views.TV_serviceDates);
     $.__views.actIndicator = Ti.UI.createActivityIndicator({
         font: {
             fontFamily: "Helvetica Neue",
@@ -76,7 +76,7 @@ function Controller() {
         width: Ti.UI.SIZE,
         id: "actIndicator"
     });
-    $.__views.__alloyId22.add($.__views.actIndicator);
+    $.__views.__alloyId24.add($.__views.actIndicator);
     exports.destroy = function() {};
     _.extend($, $.__views);
     arguments[0] || {};
